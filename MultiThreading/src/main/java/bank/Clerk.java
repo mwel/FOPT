@@ -13,7 +13,7 @@ public class Clerk extends Thread {
 
     @Override
     public void run() {
-        for (int i = 0; i < 20; i++) {
+        for (int i = 0; i < 100; i++) {
 
             // Kontonummer des Kunden eingeben
             int accountNumber = (int) (Math.random() * 100);
