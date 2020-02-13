@@ -1,6 +1,6 @@
-// begin alex solution
+package Clock;// begin alex solution
 
-public class Main {
+public class AlexClock {
 
 
     public static void main(String[] args) {
@@ -80,7 +80,7 @@ class Waiter extends Thread {
         // why decrease? shouldnt the clock run forward?
         //ticks--;
         ticks++;
-        System.out.println("Clock is: " + ticks);
+        System.out.println("Clock.Clock is: " + ticks);
 
         // notify threads that clock has ticked
         notifyAll();

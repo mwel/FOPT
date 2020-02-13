@@ -25,13 +25,13 @@ public class ListClient {
 
             }
 
-            List listReturned = appenderServer.append(list);
+//            List listReturned = appenderServer.append(list);
 
             System.out.print("List that has been given to the server as parameter:");
             list.print();
-            appenderServer.append(list);
+//            appenderServer.append(list);
             System.out.println("RMI returned list:");
-            listReturned.print();
+//            listReturned.print();
 
 
         } catch (RemoteException | NotBoundException | MalformedURLException e) {

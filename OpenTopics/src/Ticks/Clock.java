@@ -1,3 +1,5 @@
+package Ticks;
+
 public class Clock extends Thread {
 
     private LogicalTime logicalClock;

@@ -1,3 +1,5 @@
+package Parkhaus;
+
 public class Car extends Thread {
 
     private ParkingGarage garage;

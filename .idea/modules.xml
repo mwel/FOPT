@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Boxes/Boxes.iml" filepath="$PROJECT_DIR$/Boxes/Boxes.iml" />
       <module fileurl="file://$PROJECT_DIR$/FOPT.iml" filepath="$PROJECT_DIR$/FOPT.iml" />
       <module fileurl="file://$PROJECT_DIR$/GUI/GUI.iml" filepath="$PROJECT_DIR$/GUI/GUI.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lamda/Lamda.iml" filepath="$PROJECT_DIR$/Lamda/Lamda.iml" />
@@ -10,6 +11,7 @@
       <module fileurl="file://$PROJECT_DIR$/Numberlock/Numberlock.iml" filepath="$PROJECT_DIR$/Numberlock/Numberlock.iml" />
       <module fileurl="file://$PROJECT_DIR$/Parkgarage/Parkgarage.iml" filepath="$PROJECT_DIR$/Parkgarage/Parkgarage.iml" />
       <module fileurl="file://$PROJECT_DIR$/RMI/RMI.iml" filepath="$PROJECT_DIR$/RMI/RMI.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Servlets/Servlets.iml" filepath="$PROJECT_DIR$/Servlets/Servlets.iml" />
       <module fileurl="file://$PROJECT_DIR$/TCP/TCP.iml" filepath="$PROJECT_DIR$/TCP/TCP.iml" />
       <module fileurl="file://$PROJECT_DIR$/Training/Training.iml" filepath="$PROJECT_DIR$/Training/Training.iml" />
       <module fileurl="file://$PROJECT_DIR$/UDP/UDP.iml" filepath="$PROJECT_DIR$/UDP/UDP.iml" />

@@ -11,12 +11,12 @@ public class Appender extends UnicastRemoteObject implements Append {
 
     @Override
     public List append(List list) throws RemoteException {
-        System.out.print("Received List: ");
-        list.print();
-
-        list.append(4711);
-        System.out.println("Manipulated List: ");
-        list.print();
+//        System.out.print("Received List: ");
+//        list.print();
+//
+//        list.append(4711);
+//        System.out.println("Manipulated List: ");
+//        list.print();
         return list;
 
     }

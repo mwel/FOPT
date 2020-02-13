@@ -1,3 +1,5 @@
+package Ticks;
+
 public class ClockLauncher {
 
     public static void main(String[] args) {

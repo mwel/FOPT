@@ -1,3 +1,5 @@
+package Parkhaus;
+
 public class Parking {
 
     public static void main(String[] args) {
@@ -8,7 +10,7 @@ public class Parking {
         int i;
         for (i = 1; i <= 40; i++) {
 
-            new Car("Car " + i, garage);
+            new Car("Parkhaus.Car " + i, garage);
         }
         i--;
         System.out.println(i + " cars are currently waiting for a free slot.");
