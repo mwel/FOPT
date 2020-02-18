@@ -22,13 +22,13 @@ public class UDP_StatischParallel_KSS16 {
         DatagramSocket datagramSocket = new DatagramSocket(PORT);
 
         for (int i = 0; i < WORKER_COUNT; i++) {
-            Thread worker = new UDPStaticWorker(datagramSocket);
+            Thread worker = new Worker(datagramSocket);
             worker.start();
         }
     }
 }
 
-class UDPStaticWorker extends Thread {
+class Worker extends Thread {
 
     private DatagramSocket socket;
     UDP_StatischParallel_KSS16 server;
@@ -36,7 +36,7 @@ class UDPStaticWorker extends Thread {
     byte[] outBuffer;
 
 
-    public UDPStaticWorker(DatagramSocket datagramSocket) {
+    public Worker(DatagramSocket datagramSocket) {
         this.socket = datagramSocket;
     }
 
