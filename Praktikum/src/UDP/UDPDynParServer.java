@@ -30,7 +30,6 @@ public class UDPDynParServer {
             e.printStackTrace();
         }
     }
-
 }
 
 class UDP_DynParWorker extends Thread {

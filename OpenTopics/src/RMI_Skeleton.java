@@ -1,7 +1,8 @@
 import java.lang.reflect.Method;
 
-public class RMI_Skeleton {
+class RMI_SkeletonTest {
 
+    /*
     Object obj = ...;
 
     String methodName = ...;
@@ -19,4 +20,6 @@ public class RMI_Skeleton {
     Method m = c.getMethod(methodName, formalParameterList);
 
     Object result = m.invoke(obj, actualParameterList);
+
+     */
 }

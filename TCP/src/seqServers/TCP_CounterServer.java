@@ -42,6 +42,8 @@ public class TCP_CounterServer { // mit 2 Schleifen und TWR
         if (request.equals("increment")) {
             // perform increment operation
             TCP_CounterServer.counter++;
+            System.out.println("Counter incremented.");
+
 
         } else if (request.equals("reset")) {
             //perform reset

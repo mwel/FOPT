@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Zahlenschloss2 extends Thread {
 
     private final int[] kombi;
@@ -18,7 +20,7 @@ public class Zahlenschloss2 extends Thread {
 
         currentNumberSet[radnummer] = zahl;
 
-        if (currentNumberSet.equals(kombi)) {
+        if (Arrays.equals(currentNumberSet, kombi)) {
             correct = true;
             System.out.println("Schloss geöffnet.");
             notifyAll();
@@ -41,8 +43,7 @@ public class Zahlenschloss2 extends Thread {
 
     public synchronized int lesen(int radnummer) {
 
-        int currentNumber = currentNumberSet[radnummer];
-        return currentNumber;
+        return currentNumberSet[radnummer];
 
     }
 

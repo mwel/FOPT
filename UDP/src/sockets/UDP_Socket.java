@@ -48,7 +48,7 @@ public class UDP_Socket implements AutoCloseable {
     public void reply(String string) throws IOException {
 
         if (address == null) {
-            throw new IOException("Noone to reply.");
+            throw new IOException("No one to reply.");
         }
         send(string, address, port);
     }

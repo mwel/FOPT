@@ -9,21 +9,23 @@ import java.util.concurrent.TimeUnit;
 
 public class UDPHybParServer {
 
-    private static final int MIN_WORKER_COUNT = 3;
-    private static final int MAX_WORKER_COUNT = 20;
+    private static final int MIN_WORKER_COUNT = 10;
+    private static final int MAX_WORKER_COUNT = 100;
     private static final int PORT = 9876;
 
     public static void main(String[] args) {
 
         ThreadPoolExecutor workerPool =
                 new ThreadPoolExecutor(MIN_WORKER_COUNT, MAX_WORKER_COUNT,
-                        1, TimeUnit.SECONDS, new LinkedBlockingQueue<Runnable>(50));
+                        1, TimeUnit.SECONDS, new LinkedBlockingQueue<Runnable>(20));
 
         System.out.println("ThreadPool created. Server waiting . . .");
 
         try {
 
             DatagramSocket socket = new DatagramSocket(PORT);
+
+            //workerPool.prestartAllCoreThreads();
 
             while (true) {
 
@@ -42,7 +44,7 @@ public class UDPHybParServer {
 
 }
 
-class UDP_HybridWorker extends Thread {
+class UDP_HybridWorker implements Runnable {
 
     private DatagramSocket socket;
     private DatagramPacket inPacket;

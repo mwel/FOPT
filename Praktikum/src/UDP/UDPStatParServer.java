@@ -14,7 +14,8 @@ public class UDPStatParServer {
 
         try {
 
-            DatagramSocket socket = new DatagramSocket(DEFAULT_PORT);
+            DatagramSocket socket = new DatagramSocket(DEFAULT_PORT); // NO try with resources
+
             System.out.println("Server " + DEFAULT_PORT + " running and waiting . . . ");
 
             for (int i = 0; i < WORKER_COUNT; i++) {
